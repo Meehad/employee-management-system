@@ -6,8 +6,6 @@ from django.core.exceptions import ValidationError
 # Create your models here.
 
 # to validate phone no
-
-
 def validate_contact_number(value):
     if len(str(value)) != 10:
         raise ValidationError('Contact number must be exactly 10 digits.')
@@ -16,6 +14,7 @@ def validate_contact_number(value):
 
 
 class Employee(models.Model):
+    # roles of employee in a company
     EMPLOYEE_ROLE_CHOICES = [
         ('E', 'Eligible for Promotion'),
         ('M', 'Manager'),

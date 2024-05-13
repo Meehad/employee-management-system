@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'emp_details',
     'dept_det',
+    'ems_log',
 ]
 
 MIDDLEWARE = [
