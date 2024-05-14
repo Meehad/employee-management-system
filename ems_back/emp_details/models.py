@@ -1,7 +1,7 @@
 from django.db import models
 from datetime import date
 from django.core.validators import MinLengthValidator, MaxLengthValidator
-from django.core.exceptions import ValidationError
+from django.forms import ValidationError
 
 # Create your models here.
 
@@ -9,9 +9,6 @@ from django.core.exceptions import ValidationError
 def validate_contact_number(value):
     if len(str(value)) != 10:
         raise ValidationError('Contact number must be exactly 10 digits.')
-
-# Employee object or schema
-
 
 class Employee(models.Model):
     # roles of employee in a company
@@ -28,8 +25,8 @@ class Employee(models.Model):
     date_of_joining = models.DateField()
     role = models.CharField(
         max_length=1, choices=EMPLOYEE_ROLE_CHOICES)
+    dept_id = models.ForeignKey('dept_det.Department', to_field='dept_id', on_delete=models.CASCADE, null=True)
 
-    # automatically fills exp with date_of_joining
     @property
     def years_of_exp(self):
         today = date.today()
