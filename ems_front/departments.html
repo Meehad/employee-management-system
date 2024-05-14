@@ -4,44 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="departments.css">
-    <title>Document</title>
+    <title>Departments</title>
 </head>
 <body>
     <h1>DEPARTMENTS</h1>
-<br><br><br><br><br><br>
     <table border="1">
-        <tr>
-            <th>Dept ID</th>
-            <th>Dept Name</th>
-            <th>Manager of Dept</th>
-            <th>rmv/demote</th>
-        </tr>
-        <tr>
-        <th>1</th>
-        <a href=""><th id="dtbtn"></th></a>
-        <th></th>
-        <th><button id="btn">Demote</button><button id="btn">Remove</button></th>
-        </tr>
-        <tr>
-            <th></th>
-            <a href=""><th id="dtbtn"></th></a>
-            <th></th>
-            <th><button id="btn">Demote</button><button id="btn">Remove</button></th>
-            </tr>
+        <thead>
             <tr>
-                <th></th>
-                <a href=""><th id="dtbtn"></th></a>
-                <th></th>
-                <th><button id="btn">Demote</button><button id="btn">Remove</button></th>
-                </tr>
-                <tr>
-                    <th></th>
-                    <a href=""><th id="dtbtn"></th></a>
-                    <th></th>
-                    <th><button id="btn">Demote</button><button id="btn">Remove</button></th>
-                    </tr>
+                <th>Dept ID</th>
+                <th>Dept Name</th>
+                <th>Manager of Dept</th>
+                <th>Remove/Demote</th>
+            </tr>
+        </thead>
+        <tbody id="department-table-body">
+            <!-- Dynamic rows will be appended here by JavaScript -->
+        </tbody>
     </table>
-
     <button id="nbtn">Add Dept</button>
+    <script src="departments.js"></script>
 </body>
 </html>

@@ -1,92 +1,51 @@
 <!doctype html>
-
 <html lang="en"> 
-
- <head> 
-
+<head> 
   <meta charset="UTF-8"> 
-
-  <title>CodePen - Animated Login Form using Html &amp; CSS Only</title> 
+  <title>Register</title> 
   <link rel="stylesheet" href="style.css">
-
   <link rel="stylesheet" href="lstyle.css"> 
-
- </head> 
-
- <body> <!-- partial:index.partial.html --> 
-
-   <!-- header -->
+</head> 
+<body>
    <header>
-    <!-- nav -->
     <nav>
         <a href="contactus.html">Contact Us </a>
         <a href="login.html">Login\Reg</a>
         <a href="about.html">About</a>
         <a href="home.html">Home</a>
-    
     </nav>
 </header>
 
-  <section> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
-
+  <section> 
    <div class="signin"> 
-
     <div class="content"> 
-
      <h2>REGISTER</h2> 
-
      <div class="form"> 
-
         <div class="inputBox">
-
-            <input type="text" required> <i>Company Name</i> 
-
+            <input type="text" id="companyName" required> <i>Company Name</i> 
         </div>
-
       <div class="inputBox"> 
-
-       <input type="email" required> <i>Email ID</i> 
-
+       <input type="email" id="email" required> <i>Email ID</i> 
       </div> 
-
       <div class="inputBox">
-
-        <input type="tel" required> <i>Contact Number</i>
-
+        <input type="tel" id="contactNumber" required> <i>Contact Number</i>
       </div>
-
       <div class="inputBox"> 
-
-       <input type="password" required id="pwd"> <i>Password </i>
-
+       <input type="password" id="pwd" required> <i>Password</i>
       </div> 
-
       <div class="inputBox">
-
-        <input type="password" required id="confirm"> <i>Confirm Password</i>
-
+        <input type="password" id="confirm" required> <i>Confirm Password</i>
       </div>
-
-      <div class="links"> <a href="login.html">LOGIN</a> 
-
+      <div class="links"> 
+        <a href="login.html">LOGIN</a> 
       </div> 
-
       <div class="inputBox"> 
-
-       <input type="submit" value="Login"> 
-
+       <input type="submit" id="submitBtn" value="Register"> 
       </div> 
-
      </div> 
-
     </div> 
-
    </div> 
-
-  </section> <!-- partial --> 
-
+  </section>
 <script src="signin.js"></script>
-
- </body>
-
+</body>
 </html>

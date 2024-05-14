@@ -1,14 +1,47 @@
-document.getElementById("submitBtn").addEventListener("click", verify);
+document.getElementById("submitBtn").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default form submission
 
-function verify() {
-    var x = document.getElementById("pwd").value;
-    document.getElementById("txt").innerHTML = "";
+    const companyName = document.getElementById("companyName").value;
+    const email = document.getElementById("email").value;
+    const contactNumber = document.getElementById("contactNumber").value;
+    const password = document.getElementById("pwd").value;
+    const confirmPassword = document.getElementById("confirm").value;
 
-    if (document.getElementById("pwd").value !== document.getElementById("confirm").value) {
-        document.getElementById("txt").innerHTML += "Password and confirm password must be the same<br>";
+    if (password !== confirmPassword) {
+        alert("Password and confirm password must be the same");
+        return;
     }
     
-    if (x.length < 8) {
-        document.getElementById("txt").innerHTML += "Password must be greater than 8 characters";
+    if (password.length < 8) {
+        alert("Password must be greater than 8 characters");
+        return;
     }
-}
+
+    // Make the API request
+    fetch('http://127.0.0.1:8000/ems_log/cmp_reg/', { // Replace with your DRF registration endpoint
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            company_name: companyName,
+            company_email: email,
+            company_contact: contactNumber,
+            company_pwd: password
+        }),
+    })
+    .then(response => {
+        if (!response.ok) {
+            return response.json().then(err => { throw err; });
+        }
+        return response.json();
+    })
+    .then(data => {
+        alert('Registration successful!');
+        window.location.href = 'login.html';
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        alert('Registration failed: ' + JSON.stringify(error));
+    });
+});
