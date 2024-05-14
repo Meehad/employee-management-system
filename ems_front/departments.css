@@ -4,13 +4,36 @@ body{
     background-color:#fdb44b ;
 }
 
+    
+#homeb{
+    float: left;
+    font-size: 20px;
+    box-shadow: 3px 3px 2px #694007;
+    height: 35px;
+    width: 90px;
+    text-underline-offset: 10000px;
+    background-color: #005792;
+    transition: all 0.5s ease;
+    border-radius: 7px;
+}
+
+#homeb:hover{
+    transform: scale(1.05);
+    background-color: #003a60;
+}
+
+#homeb a{
+    color: white;
+    
+}
+
 h1{
     color: #00204a ;
 }
 
 table{
     font-size: 20px;
-    margin-left: 17%;
+    margin-left: 8%;
     background-color: #ca882a;
     box-shadow: 5px 5px 2px #694007;
 }

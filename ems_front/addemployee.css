@@ -3,8 +3,7 @@ body{
     justify-self: center;
     background-color:#fdb44b ;
     }
-
-        
+    
 #homeb{
     float: left;
     font-size: 20px;
@@ -26,7 +25,7 @@ body{
     color: white;
     
 }
-    
+
     h1{
         color: #00204a ;
     }
@@ -35,8 +34,8 @@ body{
         font-size: 20px;
         background-color: #ca882a;
         box-shadow: 5px 5px 2px #694007;
-        width: 350px;
-        height: 400px;
+        width: 450px;
+        height: 650px;
         margin-left: 37%;
         border-radius: 10px;
         }
@@ -63,6 +62,16 @@ h4{
     margin-top: 30px;
     }
 
+    #doj{
+        font-size: 15px;
+        
+    }
+
+
+    #dojd{
+        margin-top: 5px;
+    }
+
     #sb:hover{
         background-color: rgb(12, 189, 12);
     color: white;
@@ -72,3 +81,4 @@ h4{
         background-color: rgb(152, 152, 152);
     color: white;
     }
+    
