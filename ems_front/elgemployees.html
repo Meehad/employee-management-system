@@ -11,48 +11,20 @@
     <h1> LIST OF EMPLOYEES ELIGIBLE FOR PROMOTION</h1>
     <br><br><br><br><br><br>
         <table border="1">
+            <thead>
             <tr>
                 <th>Employee ID</th>
                 <th>Employee Name</th>
                 <th>Department</th>
                 <th>Date of Joining</th>
                 <th>Experients in Yrs</th>
-                <th>rmv/promote</th>
+                <th>remove/promote</th>
             </tr>
-            <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th><button id="btn">Promote</button><button id="rbtn">Remove</button></th>
-            </tr>
-            <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th><button id="btn">Promote</button><button id="rbtn">Remove</button></th>
-                </tr>
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th><button id="btn">Promote</button><button id="rbtn">Remove</button></th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th><button id="btn">Promote</button><button id="rbtn">Remove</button></th>
-                        </tr>
-        </table>
-    
-        
+            </thead>
+            <tbody id="elemployee-table-body">
+                <!-- Dynamic rows will be appended here by JavaScript -->
+            </tbody>
+            </table>
+            <script src="elemployees.js"></script>
 </body>
 </html>

@@ -11,6 +11,7 @@
     <h1>EMPLOYEES LIST</h1>
     <br><br><br><br><br><br>
         <table border="1">
+            <thead>
             <tr>
                 <th>Employee ID</th>
                 <th>Employee Name</th>
@@ -19,40 +20,13 @@
                 <th>Experients in Yrs</th>
                 <th>rmv/promote</th>
             </tr>
-            <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th><button id="btn">Promote</button><button id="rbtn">Remove</button></th>
-            </tr>
-            <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th><button id="btn">Promote</button><button id="rbtn">Remove</button></th>
-                </tr>
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th><button id="btn">Promote</button><button id="rbtn">Remove</button></th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th><button id="btn">Promote</button><button id="rbtn">Remove</button></th>
-                        </tr>
-        </table>
+            </thead>
+            <tbody id="employee-table-body">
+                <!-- Dynamic rows will be appended here by JavaScript -->
+            </tbody>
+            </table>
     
-        <button id="nbtn">Add Employee</button>
+        <button id="nbtn" onclick="addemp()">Add Employee</button>
+        <script src="employees.js"></script>
 </body>
 </html>
