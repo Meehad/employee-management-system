@@ -1,0 +1,74 @@
+body{
+    text-align: center;
+    justify-self: center;
+    background-color:#fdb44b ;
+    }
+
+        
+#homeb{
+    float: left;
+    font-size: 20px;
+    box-shadow: 3px 3px 2px #694007;
+    height: 35px;
+    width: 90px;
+    text-underline-offset: 10000px;
+    background-color: #005792;
+    transition: all 0.5s ease;
+    border-radius: 7px;
+}
+
+#homeb:hover{
+    transform: scale(1.05);
+    background-color: #003a60;
+}
+
+#homeb a{
+    color: white;
+    
+}
+    
+    h1{
+        color: #00204a ;
+    }
+
+    .form{
+        font-size: 20px;
+        background-color: #ca882a;
+        box-shadow: 5px 5px 2px #694007;
+        width: 350px;
+        height: 400px;
+        margin-left: 37%;
+        border-radius: 10px;
+        }
+h4{
+    color: white;
+    
+}
+
+    input{
+        margin: 20px;
+        margin-top: 30px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 2px #694007;
+        height: 20px;
+    }
+    button{
+        font-size: 15px;
+    margin: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px rgb(99, 99, 99);
+    transition: all 0.5s ease;
+    margin-top: 30px;
+    }
+
+    #sb:hover{
+        background-color: rgb(12, 189, 12);
+    color: white;
+    }
+
+    #rb:hover{
+        background-color: rgb(152, 152, 152);
+    color: white;
+    }
