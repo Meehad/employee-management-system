@@ -1,12 +1,18 @@
 body{
     text-align: center;
     justify-self: center;
+    background-color:#fdb44b ;
+}
+
+h1{
+    color: #00204a ;
 }
 
 table{
     font-size: 20px;
     margin-left: 17%;
-    background-color: rgb(235, 235, 235);
+    background-color: #ca882a;
+    box-shadow: 5px 5px 2px #694007;
 }
 th, td {
     height: 40px;
@@ -23,10 +29,25 @@ th, td {
     transition: all 0.5s ease;
 }
 
-#btn:hover{
-    background-color: rgb(60, 60, 60);
+#rbtn{
+    font-size: 15px;
+    margin: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px rgb(99, 99, 99);
+    
+    transition: all 0.5s ease;
+}
+
+#rbtn:hover{
+    background-color: rgb(255, 32, 32);
     color: white;
-   
+}
+
+#btn:hover{
+    background-color: rgb(221, 221, 56);
+    color: white; 
 }
 #nbtn{
     font-size: 25px;
@@ -40,7 +61,7 @@ th, td {
 }
 
 #nbtn:hover{
-    background-color: rgb(60, 60, 60);
+    background-color: gold;
     color: white;
    transform: scale(1.05);
 }

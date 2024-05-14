@@ -1,10 +1,13 @@
 body{
-    background-color: rgb(211, 211, 211);
+    background-color: #fdb44b;
     text-align: center;
+}
+h1 ,h2{
+    color: #00204a ;
 }
 
 .container{
-    background-color: rgb(208, 207, 207);
+    background-color:#ca882a;
     width: 90%;
     margin-left: 5%;
     display: grid;
@@ -14,12 +17,12 @@ body{
     justify-content: space-evenly;
 }
 .box{
-    background-color: rgb(198, 198, 198);
+    background-color: #005792;
     height: 130px;
     width: 230px;
     /* margin: 10px; */
     border-radius: 7px;
-    box-shadow: 5px 5px 2px grey;
+    box-shadow: 5px 5px 2px #694007;
     transition: all 0.5s ease-in-out;
     margin-left: 120px;
     margin-top: 200px;
@@ -30,9 +33,10 @@ body{
     cursor: pointer;
 }
 
-.box h4{
+.box h3,.box p{
    
     justify-self: center;
+    color: white;
 }
 a{
     color:black ;
