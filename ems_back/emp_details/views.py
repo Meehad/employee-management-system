@@ -8,6 +8,8 @@ from .serializers import EmployeeSerializer
 # Create your views here.
 
 # addition of employee
+
+
 @api_view(['POST'])
 def emp_add(request):
     data = request.data
@@ -38,9 +40,18 @@ def calculate_role(instance):
         return 'S'
 
 # show all employees
+
+
 @api_view(['GET'])
 def emp_all(request):
     profiles = Employee.objects.all()
+    serializer = EmployeeSerializer(profiles, many=True)
+    return Response(serializer.data)
+
+
+@api_view(['GET'])
+def elemp_all(request):
+    profiles = Employee.objects.filter(role='E')
     serializer = EmployeeSerializer(profiles, many=True)
     return Response(serializer.data)
 
@@ -56,6 +67,8 @@ def emp_delete(request, emp_id):
     return Response(status=status.HTTP_204_NO_CONTENT)
 
 # edit employee details
+
+
 @api_view(['PUT'])
 def emp_edit(request, emp_id):
     # Retrieve the employee profile

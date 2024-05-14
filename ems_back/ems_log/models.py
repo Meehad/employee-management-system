@@ -17,7 +17,7 @@ class Company(models.Model):
         validators=[validate_contact_number],unique=True)
     company_pwd = models.CharField(max_length=128)
 
-    def save(self, *args, **kwargs):
-        # Hash the password before saving
-        self.company_pwd = make_password(self.company_pwd)
-        super(Company, self).save(*args, **kwargs)
+    # def save(self, *args, **kwargs):
+    #     # Hash the password before saving
+    #     self.company_pwd = make_password(self.company_pwd)
+    #     super(Company, self).save(*args, **kwargs)
